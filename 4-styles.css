@@ -53,11 +53,11 @@
   
  @font-face { 
    font-family: "holberton_school-icon"; 
-   src: url("fonts/holberton_school-icon.eot?sq4eq4"); 
+   src: url("./holberton_school-icon/fonts/holberton_school-icon.eot"); 
    src: url("fonts/holberton_school-icon.eot?sq4eq4#iefix") format("embedded-opentype"),  
-        url("fonts/holberton_school-icon.ttf?sq4eq4") format("truetype"), 
-        url("fonts/holberton_school-icon.woff?sq4eq4") format("woff"), 
-        url("fonts/holberton_school-icon.svg?sq4eq4#holberton_school-icon") format("svg"); 
+        url("./holberton_school-icon/fonts//holberton_school-icon.ttf") format("truetype"), 
+        url("./holberton_school-icon/fonts/holberton_school-icon.woff") format("woff"), 
+        url("./holberton_school-icon/fonts/holberton_school-icon.svg") format("svg"); 
    font-weight: normal; 
    font-style: normal; 
    font-display: block;; 
@@ -314,6 +314,157 @@
    max-inline-size: 200px; 
  } 
   
+ /* OUR RESULTS */ 
+  
+ .results { 
+   background-image: var(--image-gradiant), url("./images/headphones_hero_2.jpg"); 
+   background-repeat: no-repeat; 
+   background-size: cover; 
+   background-position: 50%; 
+   text-align: center; 
+   color: var(--white); 
+   padding-top: 60px; 
+   padding-bottom: 60px; 
+  
+ } 
+ .results-title { 
+   font-family: var(--font-family-title); 
+   font-size: var(--font-size-large); 
+   margin-block-end: 50px; 
+ } 
+ .results-detail { 
+   max-inline-size: 575px; 
+   margin: 20px auto; 
+   line-height: 25px; 
+   font-family: var(--font-family-base); 
+ } 
+ .result-column { 
+   block-size: 220px; 
+   inline-size: 220px; 
+   margin-block-start: auto; 
+   margin: auto; 
+ } 
+ .column-pentagone { 
+   margin: auto; 
+   padding: auto; 
+   width: 200px; 
+   height: 200px; 
+ } 
+ .result-column .column-pentagone { 
+   background-image: url(./images/pentagone.png); 
+   background-repeat: no-repeat; 
+   background-size: 95%; 
+   background-position: 50%; 
+   padding-block-start: 60px; 
+ } 
+  
+ .column-pentagone span { 
+   font-family: var(--font-family-bold); 
+   font-size: var(--font-size-xx-large); 
+   padding-top: 250px; 
+   width: 150px; 
+   height: 150px; 
+   margin: auto; 
+   font-family: var(--font-family-bold); 
+ } 
+  
+ .column-pentagone p { 
+   font-family: var(--font-family-base); 
+   margin: 10px auto; 
+ } 
+  
+ /* CONTACT US */ 
+  
+ .wrapper-contact { 
+   margin: 40px auto; 
+ } 
+ .contact { 
+   block-size: 335px; 
+   inline-size: 375px; 
+   margin: auto; 
+ } 
+ .contact-title { 
+   font-family: var(--font-family-bold); 
+   margin: 20px auto; 
+   color: #071629; 
+ } 
+  
+ .contact-form { 
+   text-align: center; 
+   block-size: 335px; 
+   inline-size: 375px; 
+   margin: auto; 
+ } 
+ .contact-label { 
+   position: relative; 
+ } 
+ .contact-label { 
+   display: block; 
+   font-family: var(--font-family-base); 
+   text-align: start; 
+ } 
+ .contact-label input { 
+   display: block; 
+   border: none; 
+   inline-size: 100%; 
+   color:#071629; 
+   border-bottom: 1.4px solid rgba(128, 128, 128, 0.274); 
+   height: 40px; 
+   margin: 20px 0; 
+ }  
+  
+  
+ /* FOOTER */ 
+  
+ .footer { 
+   position: relative; 
+   block-size: 240px; 
+   background-color: #071629; 
+ } 
+ .logo-container{ 
+   display: inline; 
+   justify-content: space-between; 
+ } 
+ .logo-container img { 
+   margin: 40px auto; 
+ } 
+ .social-icons { 
+   margin: 40px auto; 
+   display: inline; 
+   float: right; 
+   justify-content: space-between; 
+ } 
+ .social-icon { 
+   color: var(--white); 
+   font-size: 1.8rem; 
+   margin: auto 10px; 
+ } 
+  
+ a:link { 
+   text-decoration: none; } 
+ a:visited { 
+   text-decoration: none; } 
+  
+ .copyright-text { 
+         display: flex; 
+         justify-content: center; 
+ } 
+  
+ .copyright-text p { 
+         margin: 0; 
+   font-family: var(--font-family-base); 
+   font-weight: var(--font-weight-thin); 
+         line-height: 15px; 
+         color: var(--white); 
+         mix-blend-mode: normal; 
+         opacity: 0.2; 
+ } 
+  
+  
+ /* Media for Responsive designs
+  ===========*/ 
+ /* MOBILE */ 
+  
  @media screen and (max-width: 480px){ 
    .wrapper { 
      inline-size: 400px; 
@@ -354,6 +505,48 @@
    } 
    .tasks-detail { 
      inline-size: 340px; 
+   } 
+   .results { 
+     background-color: unset; 
+     background-size: cover; 
+     padding: auto; 
+     margin: 5px auto; 
+   } 
+   .results-detail { 
+     font-family: var(--font-family-base); 
+     inline-size: 340px; 
+     margin: 20px auto; 
+   } 
+   .contact { 
+     block-size: 360px; 
+     margin: auto; 
+   } 
+   .contact-form { 
+     margin: auto; 
+   } 
+   .footer { 
+     block-size: 200px; 
+   } 
+   .footer-container { 
+     position: relative; 
+     display: flex; 
+     flex-direction: column; 
+     margin: 10px auto; 
+     align-items: center; 
+   } 
+   .logo-container img { 
+     margin-top: 30px; 
+   } 
+   .social-icons{ 
+     margin: 5px auto; 
+     align-items: center; 
+   } 
+   .social-icon { 
+     margin: auto 10px; 
+   } 
+   .copyright-text { 
+     justify-content: center; 
+     margin: 10px auto; 
    } 
  } 
   
@@ -407,6 +600,11 @@
      font-family: var(--font-family-base); 
      line-height: 20px; 
    } 
+   .results_container { 
+     display: grid; 
+     column-gap: 30px; 
+     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); 
+   } 
  } 
   
  /* DESKTOP */ 
@@ -435,4 +633,16 @@
    inline-size: 800px; 
    margin: 30px auto; 
    } 
+ } 
+  
+ /* PENTAGON ANIMATION */ 
+  
+ span:hover { 
+   opacity: 0.9; 
+   transition: ease-out 0.6s; 
+ } 
+  
+ .column-pentagone:hover { 
+   transition: transform 250ms; 
+   transform: translateY(-10px); 
  }
